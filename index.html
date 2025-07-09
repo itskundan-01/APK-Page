@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassOnBits - Share, Connect, Reduce Waste</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-recycle"></i>
+                <span>PassOnBits</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#download" class="nav-link">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Share Items, Build Community</h1>
+                <p class="hero-subtitle">PassOnBits connects students on campus to share, trade, and give away items they no longer need. Reduce waste, save money, and build meaningful connections.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="downloadAPK()">
+                        <i class="fas fa-download"></i>
+                        Download APK
+                    </button>
+                    <button class="btn btn-secondary" onclick="downloadZIP()">
+                        <i class="fas fa-file-archive"></i>
+                        Download ZIP
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>Ready</h3>
+                        <p>To Launch</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Beta</h3>
+                        <p>Version</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Campus</h3>
+                        <p>Focused</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-preview">
+                            <div class="app-header">
+                                <div class="app-logo">
+                                    <i class="fas fa-recycle"></i>
+                                </div>
+                                <h4>PassOnBits</h4>
+                            </div>
+                            <div class="app-content">
+                                <div class="item-card">
+                                    <div class="item-image"></div>
+                                    <div class="item-info">
+                                        <h5>Textbook - Physics 101</h5>
+                                        <p>Free • 2 min ago</p>
+                                    </div>
+                                </div>
+                                <div class="item-card">
+                                    <div class="item-image"></div>
+                                    <div class="item-info">
+                                        <h5>Study Lamp</h5>
+                                        <p>$15 • 5 min ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose PassOnBits?</h2>
+                <p>Discover the features that make sharing and connecting easier than ever</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Easy Sharing</h3>
+                    <p>Post items you no longer need with just a few taps. Add photos, descriptions, and set your price or mark it as free.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Campus-Focused</h3>
+                    <p>Connect with students and staff on your campus. Find items nearby and arrange convenient pickups.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Safe Communication</h3>
+                    <p>Built-in messaging system to communicate safely with other users without sharing personal contact information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Reduce waste and promote sustainability by giving items a second life instead of throwing them away.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Save Money</h3>
+                    <p>Find great deals on textbooks, furniture, electronics, and more from fellow students.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Build Community</h3>
+                    <p>Connect with like-minded students who care about sustainability and community building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Get started with PassOnBits in three simple steps</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Sign Up & Verify</h3>
+                        <p>Create your account using your campus email to join your university's community</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Browse & Post</h3>
+                        <p>Discover items from other students or post your own items to share or sell</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Connect & Exchange</h3>
+                        <p>Message other users and arrange safe pickups on campus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About PassOnBits</h2>
+                    <p>PassOnBits was created with a simple mission: to reduce waste and build stronger campus communities by making it easy for students to share items they no longer need.</p>
+                    <p>We believe that every item deserves a second chance, and every student deserves access to affordable resources. Our platform connects students across campuses, fostering a culture of sharing, sustainability, and community support.</p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <h4>Our Mission</h4>
+                            <p>Creating sustainable campus communities through innovative sharing solutions</p>
+                        </div>
+                        <div class="about-stat">
+                            <h4>Your Impact</h4>
+                            <p>Every shared item contributes to a more sustainable future</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="sustainability-graphic">
+                        <i class="fas fa-recycle"></i>
+                        <div class="graphic-text">
+                            <h4>Reduce</h4>
+                            <h4>Reuse</h4>
+                            <h4>Recycle</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join the community that will transform how students share, save, and build connections on campus</p>
+                <div class="download-buttons">
+                    <button class="btn btn-primary btn-large" onclick="downloadAPK()">
+                        <i class="fas fa-download"></i>
+                        Download APK File
+                        <span class="btn-subtitle">Direct install for Android</span>
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="downloadZIP()">
+                        <i class="fas fa-file-archive"></i>
+                        Download ZIP Package
+                        <span class="btn-subtitle">Complete app package</span>
+                    </button>
+                </div>
+                <div class="download-info">
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure & Safe</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Android Compatible</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-cloud-download-alt"></i>
+                        <span>Latest Version</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>PassOnBits</span>
+                    </div>
+                    <p>Building sustainable campus communities through sharing and connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PassOnBits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
