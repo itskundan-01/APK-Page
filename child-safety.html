@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Safety Standards - PassOnBits</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Additional styles for child safety page */
+        .safety-header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .safety-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .safety-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .safety-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .safety-section {
+            margin-bottom: 3rem;
+        }
+
+        .safety-section h2 {
+            color: #1f2937;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #dc2626;
+        }
+
+        .safety-section h3 {
+            color: #374151;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .safety-section h4 {
+            color: #4b5563;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .safety-section p {
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .safety-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .safety-section li {
+            color: #6b7280;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .safety-section strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        .alert-box {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-box h4 {
+            color: #dc2626;
+            margin-top: 0;
+        }
+
+        .info-box {
+            background: #dbeafe;
+            border-left: 4px solid #2563eb;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box h4 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box h4 {
+            color: #10b981;
+            margin-top: 0;
+        }
+
+        .contact-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card h3 {
+            color: #1f2937;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-card .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .contact-card .contact-item i {
+            color: #dc2626;
+            font-size: 1.5rem;
+        }
+
+        .contact-card .contact-item strong {
+            display: block;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-card .contact-item a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-card .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .reporting-section {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+        }
+
+        .reporting-section h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .reporting-section ul {
+            margin-left: 1.5rem;
+        }
+
+        .reporting-section li {
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #dc2626;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #991b1b;
+        }
+
+        .last-updated {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .compliance-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #10b981;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        .emergency-box {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .emergency-box h3 {
+            color: #92400e;
+            margin-top: 0;
+        }
+
+        .emergency-box p {
+            color: #78350f;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .emergency-box .emergency-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .emergency-box .emergency-link {
+            background: #f59e0b;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .emergency-box .emergency-link:hover {
+            background: #d97706;
+        }
+
+        @media (max-width: 768px) {
+            .safety-header h1 {
+                font-size: 2rem;
+            }
+
+            .safety-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .safety-content {
+                padding: 40px 15px;
+            }
+
+            .contact-card .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-recycle"></i>
+                <span>PassOnBits</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="privacy-policy.html" class="nav-link">Privacy</a>
+                <a href="child-safety.html" class="nav-link">Child Safety</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Safety Header -->
+    <section class="safety-header">
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> Child Safety Standards</h1>
+            <p>Our commitment to protecting children and preventing abuse</p>
+        </div>
+    </section>
+
+    <!-- Safety Content -->
+    <div class="safety-content">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="last-updated">
+            <strong>Last Updated:</strong> October 6, 2025 | <strong>Effective Date:</strong> October 6, 2025 | <strong>Version:</strong> 1.0.0
+        </div>
+
+        <div class="compliance-badge">
+            <i class="fas fa-check-circle"></i>
+            Google Play Child Safety Compliant
+        </div>
+
+        <!-- Introduction -->
+        <div class="safety-section">
+            <h2>Our Commitment to Child Safety</h2>
+            <p>Pass On BITS is deeply committed to protecting children from sexual abuse and exploitation (CSAE) and preventing the distribution of child sexual abuse material (CSAM). We have implemented comprehensive policies, technologies, and procedures to ensure our platform is safe for all users, especially minors.</p>
+            
+            <div class="alert-box">
+                <h4><i class="fas fa-exclamation-triangle"></i> Zero Tolerance Policy</h4>
+                <p style="margin-bottom: 0;"><strong>Pass On BITS has ZERO TOLERANCE for any form of child exploitation, abuse, or inappropriate content involving minors.</strong> Any violation will result in immediate account termination, content removal, and reporting to appropriate authorities.</p>
+            </div>
+        </div>
+
+        <!-- Age Requirements -->
+        <div class="safety-section">
+            <h2>Age Requirements</h2>
+            <ul>
+                <li><strong>Minimum Age:</strong> Users must be 13 years or older to create an account</li>
+                <li><strong>Age Verification:</strong> Users must provide accurate age information during registration</li>
+                <li><strong>Parental Consent:</strong> Users under 18 are encouraged to use the app with parental guidance</li>
+                <li><strong>Campus Email Verification:</strong> We verify university/college email addresses to ensure users are legitimate students</li>
+            </ul>
+
+            <div class="info-box">
+                <h4><i class="fas fa-info-circle"></i> Important Note</h4>
+                <p style="margin-bottom: 0;">While we allow users aged 13+, Pass On BITS is primarily designed for college/university students (typically 18+). We strongly recommend parental supervision for users under 18.</p>
+            </div>
+        </div>
+
+        <!-- Prevention Measures -->
+        <div class="safety-section">
+            <h2>Child Sexual Abuse & Exploitation (CSAE) Prevention Measures</h2>
+
+            <h3>1. Proactive Content Moderation</h3>
+            <ul>
+                <li><strong>AI-Powered Detection:</strong> Automated systems scan all uploaded images for inappropriate content</li>
+                <li><strong>Human Review:</strong> Flagged content is manually reviewed by our moderation team</li>
+                <li><strong>Keyword Filtering:</strong> Messages and item descriptions are scanned for suspicious language</li>
+                <li><strong>Profile Verification:</strong> Campus email verification helps prevent anonymous bad actors</li>
+            </ul>
+
+            <h3>2. User Safety Features</h3>
+            <ul>
+                <li><strong>In-App Reporting:</strong> Easy-to-use reporting button on every profile, item, and message</li>
+                <li><strong>Block & Report:</strong> Users can block and report suspicious accounts immediately</li>
+                <li><strong>Private Messaging Only:</strong> No public comments to reduce harassment opportunities</li>
+                <li><strong>No External Links:</strong> Users cannot share external URLs to prevent grooming attempts</li>
+                <li><strong>Location Privacy:</strong> Only approximate locations are shown (never exact addresses)</li>
+            </ul>
+
+            <h3>3. Content Policies</h3>
+            <ul>
+                <li>❌ No sexually explicit content of any kind</li>
+                <li>❌ No images or content involving minors in inappropriate situations</li>
+                <li>❌ No personal contact information sharing (phone numbers, addresses)</li>
+                <li>❌ No solicitation or requests for inappropriate meetups</li>
+                <li>❌ No harassment, bullying, or threatening behavior</li>
+                <li>❌ No sharing of CSAM or links to such material</li>
+            </ul>
+        </div>
+
+        <!-- CSAM Detection -->
+        <div class="safety-section">
+            <h2>Child Sexual Abuse Material (CSAM) Detection & Response</h2>
+
+            <h3>Detection Technologies</h3>
+            <ul>
+                <li><strong>PhotoDNA Technology:</strong> We utilize industry-standard hash-matching technology to detect known CSAM</li>
+                <li><strong>Image Analysis:</strong> All uploaded images are automatically scanned before being published</li>
+                <li><strong>Machine Learning:</strong> AI models trained to identify suspicious patterns and content</li>
+                <li><strong>Hash Database:</strong> Comparison against databases of known CSAM hashes (NCMEC, IWF)</li>
+            </ul>
+
+            <h3>Immediate Response Protocol</h3>
+            <p>When CSAM or suspected CSAM is detected:</p>
+            <ol>
+                <li><strong>Immediate Removal:</strong> Content is instantly removed from our platform</li>
+                <li><strong>Account Suspension:</strong> The uploading account is immediately suspended</li>
+                <li><strong>Evidence Preservation:</strong> All relevant data is securely preserved for law enforcement</li>
+                <li><strong>Authority Notification:</strong> Report filed within 24 hours to appropriate authorities</li>
+                <li><strong>Permanent Ban:</strong> User is permanently banned from the platform</li>
+            </ol>
+        </div>
+
+        <!-- Reporting System -->
+        <div class="safety-section">
+            <h2>In-App Reporting System</h2>
+
+            <div class="success-box">
+                <h4><i class="fas fa-flag"></i> How Users Can Report Concerns</h4>
+                <p><strong>Pass On BITS provides multiple ways for users to report child safety concerns:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Report Button:</strong> Available on every profile, item listing, and message thread</li>
+                    <li><strong>Report Categories:</strong> Specific option for "Child Safety Concern" or "Inappropriate Content"</li>
+                    <li><strong>Anonymous Reporting:</strong> Users can report anonymously without fear of retaliation</li>
+                    <li><strong>Urgent Reports:</strong> Critical reports are flagged for immediate review</li>
+                    <li><strong>24/7 Monitoring:</strong> Reports are monitored around the clock</li>
+                </ul>
+            </div>
+
+            <h3>What Happens After a Report</h3>
+            <ol>
+                <li><strong>Immediate Review:</strong> Child safety reports are prioritized and reviewed within 1 hour</li>
+                <li><strong>Content Removal:</strong> Violating content is removed immediately</li>
+                <li><strong>Investigation:</strong> Our safety team investigates the reported account and content</li>
+                <li><strong>Account Action:</strong> Warnings, suspensions, or permanent bans are issued</li>
+                <li><strong>Law Enforcement:</strong> Serious cases are reported to authorities</li>
+                <li><strong>Reporter Feedback:</strong> The reporter is notified of the action taken</li>
+            </ol>
+        </div>
+
+        <!-- Legal Compliance -->
+        <div class="safety-section">
+            <h2>Legal Compliance & Reporting to Authorities</h2>
+
+            <div class="alert-box">
+                <h4><i class="fas fa-gavel"></i> Mandatory Reporting</h4>
+                <p style="margin-bottom: 0;"><strong>Pass On BITS complies with all relevant child safety laws and regulations, including mandatory reporting requirements.</strong> We work closely with law enforcement and child safety organizations worldwide.</p>
+            </div>
+
+            <h3>Authorities We Report To</h3>
+            <ul>
+                <li><strong>NCMEC (USA):</strong> National Center for Missing & Exploited Children - CyberTipline reports</li>
+                <li><strong>FBI:</strong> Federal Bureau of Investigation for serious cases</li>
+                <li><strong>Local Law Enforcement:</strong> Campus police and local authorities when applicable</li>
+                <li><strong>IWF (UK):</strong> Internet Watch Foundation for international cases</li>
+                <li><strong>Interpol:</strong> For cross-border cases involving multiple countries</li>
+            </ul>
+
+            <h3>Legal Frameworks We Comply With</h3>
+            <ul>
+                <li>18 U.S.C. § 2258A - CSAM reporting requirements (USA)</li>
+                <li>COPPA - Children's Online Privacy Protection Act (USA)</li>
+                <li>GDPR Article 8 - Conditions for children's consent (EU)</li>
+                <li>UK Online Safety Act (UK)</li>
+                <li>Local campus safety regulations</li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="safety-section">
+            <h2>Designated Child Safety Contact</h2>
+
+            <div class="contact-card">
+                <h3><i class="fas fa-user-shield"></i> Child Safety Point of Contact</h3>
+                <p>Our designated child safety contact is ready and able to speak about Pass On BITS' CSAM prevention practices and compliance with child safety standards.</p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email Address:</strong>
+                        <a href="mailto:theycallmekundan@gmail.com">theycallmekundan@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <strong>Response Time:</strong>
+                        Child safety reports are reviewed within 1 hour. General inquiries within 24 hours.
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <strong>Authority:</strong>
+                        This contact has full authority to discuss our CSAM prevention practices, compliance measures, and reporting procedures.
+                    </div>
+                </div>
+            </div>
+
+            <h3>Additional Contact Methods</h3>
+            <ul>
+                <li><strong>Developer Email:</strong> <a href="mailto:kundan845437321@gmail.com">kundan845437321@gmail.com</a></li>
+                <li><strong>In-App Reporting:</strong> Use the "Report" button within the app for immediate action</li>
+                <li><strong>Emergency Cases:</strong> If you suspect immediate danger to a child, contact local emergency services (911 in USA) first</li>
+            </ul>
+        </div>
+
+        <!-- Reporting Box -->
+        <div class="reporting-section">
+            <h3><i class="fas fa-exclamation-circle"></i> Reporting Requirements Compliance</h3>
+            <p><strong>Pass On BITS allows users to report child safety concerns in-app through:</strong></p>
+            <ul>
+                <li>Dedicated "Report" button on all user profiles, items, and messages</li>
+                <li>Specific reporting category for child safety concerns</li>
+                <li>Anonymous reporting option to protect reporter identity</li>
+                <li>24/7 monitoring and prioritized review of child safety reports</li>
+                <li>Direct contact email: <a href="mailto:theycallmekundan@gmail.com" style="color: white; text-decoration: underline;">theycallmekundan@gmail.com</a></li>
+            </ul>
+            <p style="margin-bottom: 0;"><strong>My app complies with all relevant child safety laws, and reports to regional and national authorities including NCMEC, FBI, local law enforcement, and international agencies as required.</strong></p>
+        </div>
+
+        <!-- Emergency Resources -->
+        <div class="emergency-box">
+            <h3><i class="fas fa-phone-volume"></i> Emergency Resources</h3>
+            <p>If you need immediate help or want to report child abuse:</p>
+            <div class="emergency-links">
+                <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" class="emergency-link">
+                    <i class="fas fa-external-link-alt"></i> NCMEC CyberTipline
+                </a>
+                <a href="tel:1-800-843-5678" class="emergency-link">
+                    <i class="fas fa-phone"></i> 1-800-THE-LOST
+                </a>
+                <a href="https://report.cybertip.org/" target="_blank" class="emergency-link">
+                    <i class="fas fa-flag"></i> Report Online
+                </a>
+            </div>
+        </div>
+
+        <!-- Staff Training -->
+        <div class="safety-section">
+            <h2>Staff Training & Awareness</h2>
+            <ul>
+                <li><strong>Regular Training:</strong> All team members receive regular training on child safety issues</li>
+                <li><strong>CSAM Recognition:</strong> Staff trained to identify and handle CSAM reports appropriately</li>
+                <li><strong>Trauma-Informed Approach:</strong> Team members trained in trauma-informed content moderation</li>
+                <li><strong>Legal Compliance:</strong> Regular updates on changing laws and regulations</li>
+                <li><strong>Mental Health Support:</strong> Wellness resources available for team members reviewing sensitive content</li>
+            </ul>
+        </div>
+
+        <!-- Transparency -->
+        <div class="safety-section">
+            <h2>Transparency & Accountability</h2>
+            
+            <h3>Regular Reporting</h3>
+            <ul>
+                <li>We maintain detailed records of all CSAM reports and actions taken</li>
+                <li>Regular audits of our safety systems and procedures</li>
+                <li>Cooperation with law enforcement investigations</li>
+                <li>Compliance with all legal reporting requirements</li>
+            </ul>
+
+            <h3>Continuous Improvement</h3>
+            <ul>
+                <li>Regular review and update of safety policies</li>
+                <li>Investment in new detection technologies</li>
+                <li>Collaboration with child safety organizations</li>
+                <li>User feedback integration into safety features</li>
+            </ul>
+        </div>
+
+        <!-- User Guidelines -->
+        <div class="safety-section">
+            <h2>User Safety Guidelines</h2>
+
+            <div class="info-box">
+                <h4><i class="fas fa-lightbulb"></i> Tips for Safe Use</h4>
+                <ul style="margin-bottom: 0;">
+                    <li>Never share personal contact information (phone, address, social media)</li>
+                    <li>Meet in public places on campus for item exchanges</li>
+                    <li>Report any suspicious behavior or inappropriate content immediately</li>
+                    <li>Trust your instincts - if something feels wrong, report it</li>
+                    <li>Block and report users who make you uncomfortable</li>
+                    <li>Use the app only for its intended purpose (sharing campus items)</li>
+                    <li>Parents: Monitor your child's app usage if they are under 18</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Commitment Statement -->
+        <div class="safety-section">
+            <h2>Our Commitment</h2>
+            <div class="success-box">
+                <h4><i class="fas fa-heart"></i> We Promise</h4>
+                <p><strong>Pass On BITS is committed to:</strong></p>
+                <ul>
+                    <li>Maintaining the highest standards of child safety</li>
+                    <li>Responding swiftly and decisively to any reports of abuse</li>
+                    <li>Continuously improving our safety systems and policies</li>
+                    <li>Full cooperation with law enforcement and child safety organizations</li>
+                    <li>Transparency in our practices and procedures</li>
+                    <li>Creating a safe, positive environment for all users</li>
+                </ul>
+                <p style="margin-bottom: 0;"><strong>Child safety is not just a policy for us - it's our responsibility and our priority.</strong></p>
+            </div>
+        </div>
+
+        <!-- Updates -->
+        <div class="safety-section">
+            <h2>Policy Updates</h2>
+            <p>This child safety standards policy may be updated as we improve our systems or as legal requirements change. We will notify users of significant changes and update the "Last Updated" date accordingly.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-card">
+            <h3><i class="fas fa-envelope"></i> Questions or Concerns?</h3>
+            <p>If you have questions about our child safety standards or need to report a concern:</p>
+            <div class="contact-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <strong>Child Safety Contact:</strong>
+                    <a href="mailto:theycallmekundan@gmail.com">theycallmekundan@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                    <strong>Developer Contact:</strong>
+                    <a href="mailto:kundan845437321@gmail.com">kundan845437321@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            <strong>Last Updated:</strong> October 6, 2025 | <strong>Version:</strong> 1.0.0
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>PassOnBits</span>
+                    </div>
+                    <p>Building sustainable campus communities through sharing and connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal & Safety</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="child-safety.html">Child Safety Standards</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="mailto:theycallmekundan@gmail.com">Report Abuse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PassOnBits. All rights reserved. | <a href="child-safety.html" style="color: #9ca3af;">Child Safety Standards</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
