@@ -119,7 +119,7 @@ function downloadAPK() {
     // Simulate download delay
     setTimeout(() => {
         // Your APK file ID from Google Drive
-        const googleDriveFileId = '15y36Zh3w9i7-L5eK2NZtrRB5bn1bCoGg';
+        const googleDriveFileId = '1cPiYnODcsWgcUfqKgvc2Of97Oyw8yaWd';
         const apkUrl = `https://drive.google.com/uc?export=download&id=${googleDriveFileId}`;
         
         try {
